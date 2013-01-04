@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
 #import "MasterViewController.h"
+#import "Photo.h"
 
 @implementation AppDelegate
 

@@ -21,7 +21,27 @@
 		D25B02021696314600DF0D24 /* UICollectionViewExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D25B02001696314600DF0D24 /* UICollectionViewExample.xcdatamodeld */; };
 		D25B02051696314600DF0D24 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25B02041696314600DF0D24 /* MasterViewController.m */; };
 		D25B02081696314600DF0D24 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25B02071696314600DF0D24 /* DetailViewController.m */; };
+		D25B02131696418400DF0D24 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D25B02121696418400DF0D24 /* CollectionViewCell.m */; };
+		D25B02201696472D00DF0D24 /* libPXAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D25B021D1696470C00DF0D24 /* libPXAPI.a */; };
+		D25B022316964A8100DF0D24 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = D25B022216964A8100DF0D24 /* Photo.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D25B021C1696470C00DF0D24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25B02141696470C00DF0D24 /* PXAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5EB9AFC415C34F3F002E7F6D;
+			remoteInfo = PXAPI;
+		};
+		D25B021E1696470C00DF0D24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25B02141696470C00DF0D24 /* PXAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5EB9AFD515C34F3F002E7F6D;
+			remoteInfo = tests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D25B01DF1696314600DF0D24 /* UICollectionViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +64,11 @@
 		D25B02041696314600DF0D24 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		D25B02061696314600DF0D24 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		D25B02071696314600DF0D24 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D25B02111696418400DF0D24 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		D25B02121696418400DF0D24 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		D25B02141696470C00DF0D24 /* PXAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PXAPI.xcodeproj; path = "500px-iOS-api/PXAPI.xcodeproj"; sourceTree = "<group>"; };
+		D25B022116964A8100DF0D24 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		D25B022216964A8100DF0D24 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +80,7 @@
 				D25B01E61696314600DF0D24 /* Foundation.framework in Frameworks */,
 				D25B01E81696314600DF0D24 /* CoreGraphics.framework in Frameworks */,
 				D25B01EA1696314600DF0D24 /* CoreData.framework in Frameworks */,
+				D25B02201696472D00DF0D24 /* libPXAPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +107,7 @@
 		D25B01E21696314600DF0D24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D25B02141696470C00DF0D24 /* PXAPI.xcodeproj */,
 				D25B01E31696314600DF0D24 /* UIKit.framework */,
 				D25B01E51696314600DF0D24 /* Foundation.framework */,
 				D25B01E71696314600DF0D24 /* CoreGraphics.framework */,
@@ -92,14 +119,9 @@
 		D25B01EB1696314600DF0D24 /* UICollectionViewExample */ = {
 			isa = PBXGroup;
 			children = (
-				D25B01F41696314600DF0D24 /* AppDelegate.h */,
-				D25B01F51696314600DF0D24 /* AppDelegate.m */,
-				D25B01FD1696314600DF0D24 /* MainStoryboard.storyboard */,
-				D25B02031696314600DF0D24 /* MasterViewController.h */,
-				D25B02041696314600DF0D24 /* MasterViewController.m */,
-				D25B02061696314600DF0D24 /* DetailViewController.h */,
-				D25B02071696314600DF0D24 /* DetailViewController.m */,
-				D25B02001696314600DF0D24 /* UICollectionViewExample.xcdatamodeld */,
+				D25B02101696317400DF0D24 /* Models */,
+				D25B020F1696316600DF0D24 /* Views */,
+				D25B020E1696315500DF0D24 /* Controllers */,
 				D25B01EC1696314600DF0D24 /* Supporting Files */,
 			);
 			path = UICollectionViewExample;
@@ -117,6 +139,48 @@
 				D25B01FB1696314600DF0D24 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D25B020E1696315500DF0D24 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D25B01F41696314600DF0D24 /* AppDelegate.h */,
+				D25B01F51696314600DF0D24 /* AppDelegate.m */,
+				D25B02031696314600DF0D24 /* MasterViewController.h */,
+				D25B02041696314600DF0D24 /* MasterViewController.m */,
+				D25B02061696314600DF0D24 /* DetailViewController.h */,
+				D25B02071696314600DF0D24 /* DetailViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D25B020F1696316600DF0D24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D25B01FD1696314600DF0D24 /* MainStoryboard.storyboard */,
+				D25B02111696418400DF0D24 /* CollectionViewCell.h */,
+				D25B02121696418400DF0D24 /* CollectionViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D25B02101696317400DF0D24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D25B02001696314600DF0D24 /* UICollectionViewExample.xcdatamodeld */,
+				D25B022116964A8100DF0D24 /* Photo.h */,
+				D25B022216964A8100DF0D24 /* Photo.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D25B02151696470C00DF0D24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D25B021D1696470C00DF0D24 /* libPXAPI.a */,
+				D25B021F1696470C00DF0D24 /* tests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,12 +222,35 @@
 			mainGroup = D25B01D41696314600DF0D24;
 			productRefGroup = D25B01E01696314600DF0D24 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D25B02151696470C00DF0D24 /* Products */;
+					ProjectRef = D25B02141696470C00DF0D24 /* PXAPI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D25B01DE1696314600DF0D24 /* UICollectionViewExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D25B021D1696470C00DF0D24 /* libPXAPI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPXAPI.a;
+			remoteRef = D25B021C1696470C00DF0D24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D25B021F1696470C00DF0D24 /* tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = tests.octest;
+			remoteRef = D25B021E1696470C00DF0D24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D25B01DD1696314600DF0D24 /* Resources */ = {
@@ -190,6 +277,8 @@
 				D25B02021696314600DF0D24 /* UICollectionViewExample.xcdatamodeld in Sources */,
 				D25B02051696314600DF0D24 /* MasterViewController.m in Sources */,
 				D25B02081696314600DF0D24 /* DetailViewController.m in Sources */,
+				D25B02131696418400DF0D24 /* CollectionViewCell.m in Sources */,
+				D25B022316964A8100DF0D24 /* Photo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +359,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UICollectionViewExample/UICollectionViewExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = "UICollectionViewExample/UICollectionViewExample-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,7 +372,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UICollectionViewExample/UICollectionViewExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = "UICollectionViewExample/UICollectionViewExample-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -306,6 +399,7 @@
 				D25B020D1696314600DF0D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
